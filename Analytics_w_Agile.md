@@ -114,6 +114,95 @@
 2. Do branching and merging
 3. Use Multiple Enviro
 4. Modularize and Containerize
+  * (https://www.docker.com/)
+  * Scriptable environments
 5. Give analyst knobs
+  * want to add a column to a database without doing a lot of work (promote analytic people to be self service, enable them to make changes the database on thier own, maximum of control without having to do anyone else--purpose build app that test their change in place)
+    * allow a marketing team to upload a list 
 6. Use simple storage
-7. SUpport Three Workflows
+  * Data lake and having the ability to break it into smaller pieces
+  * How do you deploy it to a production environment 
+  * **Store the transformation process in GIT** and keep the resulting process in S3 or DB
+    * Has software that lets us know the version, jason document with the metadata
+    * some are time based with folder heirarchy or jira ticket numbers as a path name
+  * Have code in version control and the data kept on bucket storage not version controlled
+    * As long as there are transformations then there 
+  * Containerize the older environments, ways to backup the machine as an image 
+  * unit of analysis at aggregated level vs. raw data storage saving for legal purposes
+7. Support Three Workflows
+  * main (data transformation code, workbooks, process copy of code create your own environment)
+  * master
+  * trunk
+
+* Seven steps in action
+  1. Select story
+  2. branch in git
+  3. create environment
+  4. implement feature
+  5. write new tests
+  6. run new and existing tests
+  7. check in to branch
+  8. merge to parent
+  9. delete environment
+* When sprint ends
+  * Deliver all complete features to customer
+  * Merge sprint branch to master
+  * Roll un-merged features into the next sprint
+* Model sleection & training - Model Production
+  1. Build the predictive model
+  2. Use the predictive model
+  3. Iterate, Test and Improve Model
+
+### How to Measure
+* Classic burn down
+  * purpose: show status of current sprint
+  * displays: remaining value and ideal burn
+    * Data comes from ticket system
+    * Need to estimate stories
+* Velocity Chart
+  * purpose: shows team improvement over time and scope creep
+  * displays: story points /sprint
+    * Can color by work type
+      * Ad hoc
+      * Changes in production
+      * Bugs
+* Production Issues
+  * Purpose: shows major quality issues
+  * Displays: cont of issues
+    * Also can dsplay root cause
+    * Log time to gauge impact
+    * Input to retrospective
+* Quality Circle
+  * If porduction issues are not addressed in the retrospective
+  * Meet periodically to review production issues
+  * Arrange them into a Pareto chart
+* Data arrival and delivery SLA tracking
+  * Purpose: See if data is arriving on time
+  * Displays: date arrival vs. SLA
+    * Use as input to Quality Circle / Retrospective
+*  Test inventory
+  * Number of tests overtime
+  * Details on each test
+* Test Coverage
+  * % of tables covered by tests
+  * % columns covered by tests
+* Process Control Charts for key build metrics
+  * Purpose: Variation of inputs / outputs
+  * Display: value and rnages
+    * Data comes from tests  
+* Exercise 6: Which measure would give you the most benefit? Which chart would be the easiest to implement  
+  * Data inventory of skills set specific project for specific talents  
+
+* Proactive errors from SLA when the source data comes in
+
+* Data categorization
+  * Think about your data as 3 discrete buckets
+    1. An analytic asset: directionally correct, useful when looked at in aggregate with other data, may have small errors at lowest grain
+    2. An enterprise asset: gold standard, best company can achieve, accurate down to the lowest grain
+    3. Nonessential data
+  * Enterprise Asset Data is the most expensive to create - have a method to promote data into that class
+  * swap cluster ip address form old database underneath to new database while people are using it
+
+* info@datakitchen.io 
+  
+  
