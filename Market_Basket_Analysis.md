@@ -11,6 +11,31 @@
 * take a minimum support or else you will end up with too many rules
 * create transaction sets for each purchaser
 * then you go over 2 sets, 3 sets, etc. look at support
+* Set a minimum confidence threshold
+
+### Unstructured data and Big Data
+* http://www.mattblackwell.org/files/papers/bigdata.pdf
+* Too many attributes, the curse of dimensionality
+  * PCA
+  * Unstructured data
+* Definition of Big Data: Operationally unable to handle 4gb / 6gb of data more RAM then considered ram
+* The code is large even if the algorithm is simple
+* data intensive probelsm
+  1. Subset the data
+    * could use DBR api
+    * alternaitve is you may not need all the attributes **PC (Principle Component) Analysis**
+      * http://www.r-bloggers.com/computing-and-visualizing-pca-in-r/
+  2. A rommp through bigmemory
+    * loads only part of it into ram
+  3. When you bring in Map Reduce
+    * Hadoop Map Reduce
+      * TM package if you want to play with R if you have a table with email string text values and classify it
+      * **Could be useful for looking at common issues from everyone's emails**
+      * **Strength:** Map reduce will help you reduce them into individual nodes and do the computations into theose individual notdes into specific ways all indexes to the same node and then recombine to get the results back to you (Word count)  download cloudera application
+      * **Drawback:** How many problems can you actually divide and recombine easily (ex: averages and means). distributed systems need to be supervised, but challengine when node fails.  Enterprise versions of hadoop (google and horton works) address the problem of node failure.  Hadoop loads the data then removes, loads data again and removes
+    * Apache spark came to solve the map r problem of load and reload datasets of ram
+      * Benifit: reusable data file maps, rapid calculation for things like the stock market (in memory databases like IBM, but expensive)
+  3. 
 
 ### Anomaly Detection
 * http://www.itl.nist.gov/div898/handbook/eda/section3/eda35h.htm
