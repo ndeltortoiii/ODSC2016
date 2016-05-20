@@ -35,3 +35,12 @@
   * then use cartesian distance formula--weight, color, type
   * then sort by distances using KNN, path of least resistance used as a decisioin map
   * Normalization
+
+* Build a recommender system
+  * http://www.inf.ed.ac.uk/teaching/courses/inf2b/learnnotes/inf2b-learn-note02-2up.pdf 
+  * summary(knn(train, test, cl, k = 1)) 
+  * map reduce uses recommender systems to divy it up to multiple machines
+    * rows are individual critics and the columns are the individual movies and the numbers are the ratings
+      * this is how they look for vectors and then calculate the distances from there
+      * why 2 people, what about the other people?
+        * come up with a similarities weighted from everybody's recommendations (formula 6 in pdf above) 
