@@ -117,6 +117,7 @@
 
 ### Teams, Deliverables, Timing, Tools
 * Data Supplier (Data Extracts Monthly)-RDBS, MDM, Salesforce, sFTP | Data Engineer (Organized, quality checked data set Weekly)- AWS,: S3, EC2, Redshift | Data Analyst (Insights via charts, graphs, dashboards, models daily) Tableau, Alteryx, Excel all use Jira
+  * Each have their own scrums, but there is one guy from the data anylitics end the runs the show 
 * Customers set priorities, requirements, and our focus
 * Data analysts trying to empower business
 * Data Supplier Team
@@ -144,6 +145,20 @@
   2. Root cause: Issue with production of supplier file
   3. Change test for % variation not absolut number
 
+* Shared dimensions across multiple fact tables
+* What is the tool we use to load the star schema
+  * Send SQl to Redshift to create the star schema 
+* Stored procedures are very challenging need work around for 
+* Security is more about a process than a technology
 
+### Process Movement
+* work we do at each level
+* **Master Data Management want that**
+* Analytics team picking up JIRA, SCRUM, and Confluence wiki to Analyst Team -- Learn from the Sales Team
 
+* Lessons Learned
+  * Culture Change: directionally correct, 70% right the first time
+  * Process Durability
+  * Focus
+  * Speed Trumps Erros
 
