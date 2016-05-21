@@ -1,0 +1,5 @@
+# “Workshop: Big Data Warehouse Case Study with Amazon Redshift and S3”
+
+## Gil Benghiat,Chris Bergh & Eric Estabrooks, DataKitchen
+* Saturday Workshop: The list of failed data warehouse projects is long. Operational projects often leave end-users, data analysts and data scientists frustrated with long lead times for changes and bug fixes. This case study will illustrate how to make changes to the data warehouse and dashboards quickly and with high quality. To start, we first look at a pharmaceutical launch, present the Seven Shocking Steps to Agile Analytics, explain Redshift and other Amazon Web Services (AWS) technologies, and show how to implement a Data Lake in AWS. The presenters then examine how to partition the work to teams and walk through examples on how to quickly implement features in the analytic system. Finally, we show how assets migrate between teams and review lessons learned. The speakers are the founders of DataKitchen and have decades of hands on and executive management experience in data, analytics, and software development and are current practitioners of Agile Analytics.
+
